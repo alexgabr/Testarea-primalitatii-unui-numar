@@ -6,8 +6,9 @@ int main() {
 	bool p = true;
 
 	cin >> n;
-	while (d < n / 2 && p) {
-		if (n % 2 == 0) {
+
+	while (d <= n / 2 && p) {
+		if (n % d == 0) {
 			p = false;
 		}
 		else {
@@ -20,4 +21,6 @@ int main() {
 	else {
 		cout << "Numarul nu este prim.";
 	}
+
+	return 0;
 }
