@@ -8,19 +8,15 @@ int main() {
 	cin >> n;
 
 	while (d <= n / 2 && p) {
-		if (n % d == 0) {
+		if (n % d == 0)
 			p = false;
-		}
-		else {
+		else
 			d += 1;
-		}
 	}
-	if (p) {
+	if (p)
 		cout << "Numarul este prim.";
-	}
-	else {
+	else
 		cout << "Numarul nu este prim.";
-	}
 
 	return 0;
 }
